@@ -8,16 +8,14 @@ bool isPalind=true;
   
 for (int i = 0; i < word.Length/2; i++)
 {
-    if (word[i]==word[word.Length-1])
+    if (word[i]!=word[word.Length-i-1])
     {
-        isPalind=true;   
+        isPalind=false;   
+        break;
     }
-    else
-    {
-        isPalind=false;
-    }
-        Console.WriteLine($"{isPalind}");
+ 
 }
+  Console.WriteLine($"{isPalind}");
 
   }
 
